@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: test-deploy
-        image: image: devguilhermevada/test-deploy:latest
+        image: devguilhermevada/test-deploy:latest
         ports:
         - containerPort: 80
         resources:
