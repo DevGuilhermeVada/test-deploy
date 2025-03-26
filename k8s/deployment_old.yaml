@@ -17,13 +17,6 @@ spec:
         image: DOCKER_USERNAME/test-deploy:latest
         ports:
         - containerPort: 80
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "100m"
-          limits:
-            memory: "128Mi"
-            cpu: "250m"
 ---
 apiVersion: v1
 kind: Service
@@ -36,5 +29,4 @@ spec:
   ports:
     - port: 80
       targetPort: 80
-      # Altere a porta aqui se 30080 estiver ocupada:
-      nodePort: 30081
+      nodePort: 30080
